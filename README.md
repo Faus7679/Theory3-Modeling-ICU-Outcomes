@@ -51,6 +51,23 @@ For the model of `STA` on `AGE`, the logit equation is
 
 This linear form is important because it shows that logistic regression models a straight-line relationship between `AGE` and the **log-odds** of the discharge outcome, even though the probability itself changes nonlinearly.
 
+## Python demonstration
+
+`icu_logistic_regression.py` fits the `STA ~ AGE` model and prints the fitted
+equation, logit equation, odds ratio, coefficient interpretation, and predicted
+probabilities. The repository does not contain patient-level data, so running
+the script without an argument uses a clearly labeled illustrative data set:
+
+```bash
+python icu_logistic_regression.py
+```
+
+For actual data, provide a CSV with numeric `AGE` and binary `STA` columns:
+
+```bash
+python icu_logistic_regression.py patient_data.csv
+```
+
 ## Interpretation of the age coefficient
 
 Exponentiating the coefficient gives an odds ratio:
