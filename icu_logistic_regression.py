@@ -18,8 +18,8 @@ from typing import Iterable
 # The repository does not include patient-level data. These values are only an
 # illustrative data set so that every assignment result can be reproduced.
 EXAMPLE_DATA = [
-    (25, 1), (30, 1), (35, 1), (40, 1), (45, 1),
-    (50, 1), (55, 1), (60, 0), (65, 0), (70, 0),
+    (25, 1), (30, 1), (35, 1), (40, 1), (45, 0),
+    (50, 1), (55, 1), (60, 0), (65, 1), (70, 0),
     (75, 0), (80, 0),
 ]
 
